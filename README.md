@@ -17,6 +17,14 @@ npx vite preview   # http://127.0.0.1:5181 (build-i yoxlamaq üçün)
 
 Backend yoxdur: bütün məlumat `src/data/toponyms.json`-dadır. Bu fayl `scripts/gen-data.mjs` ilə yaradılır.
 
+## Canlı və deploy
+
+- **Canlı:** https://top.munsif.im (Let's Encrypt, http → https)
+- **Repo:** `github.com/Kadimoff/toponim` (private), branch `main`
+- **Avtomatik deploy:** `main`-ə push etdikdən təxminən 1–3 dəqiqə sonra sayt canlıda yenilənir. Serverdə `toponim-autodeploy.timer` hər dəqiqə GitHub-ı deploy key ilə yoxlayır. Yeni commit tapanda Coolify-a deploy əmri verir. Coolify Dockerfile ilə build edib konteyneri dəyişir (rolling update və healthcheck ilə). Build alınmasa, işləyən versiya yerində qalır.
+- **Konteyner:** build mərhələsi Node 24 + Chromium ilə gedir (prerender daxil), sayt nginx ilə statik verilir. `.mjs` faylları `text/javascript` kimi verilməlidir, əks halda MapLibre worker-i yüklənmir.
+- **Server tərəfi:** Coolify app `toponim-atlas`, autodeploy skripti `/usr/local/bin/toponim-autodeploy`, jurnal `journalctl -u toponim-autodeploy`.
+
 ## Struktur
 
 ```
