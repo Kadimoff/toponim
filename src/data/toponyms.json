@@ -1,0 +1,1691 @@
+{
+ "_note": "NÜMUNƏ MƏLUMAT / SAMPLE DATA — all names, forms, years and archive codes are fictional and for demonstration only.",
+ "items": [
+  {
+   "id": "gumusdere",
+   "names": {
+    "az": "Gümüşdərə",
+    "ru": "Гюмюшдере",
+    "en": "Gumushdara"
+   },
+   "type": "oikonym",
+   "region": "nw",
+   "coordinates": [
+    47.4,
+    41.1
+   ],
+   "historicalForms": [
+    {
+     "form": "Gümişdərə",
+     "year": 1593,
+     "source": "NM-TA-001",
+     "kind": "tax"
+    },
+    {
+     "form": "Кумушдере",
+     "year": 1831,
+     "source": "NM-CA-002",
+     "kind": "cameral"
+    },
+    {
+     "form": "Gümüşdərə",
+     "year": 1929,
+     "source": "NM-MA-003",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«gümüş» və «dərə» sözlərindən",
+    "ru": "из слов «гюмюш» (серебро) и «дере» (долина)",
+    "en": "from \"gümüş\" (silver) and \"dərə\" (valley)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-001",
+     "kind": "tax",
+     "year": 1593
+    },
+    {
+     "code": "NM-CA-002",
+     "kind": "cameral",
+     "year": 1831
+    },
+    {
+     "code": "NM-MA-003",
+     "kind": "map",
+     "year": 1929
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.97,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "saribulaq",
+   "names": {
+    "az": "Sarıbulaq",
+    "ru": "Сарыбулаг",
+    "en": "Saribulag"
+   },
+   "type": "oikonym",
+   "region": "nw",
+   "coordinates": [
+    47,
+    41.3
+   ],
+   "historicalForms": [
+    {
+     "form": "Sarı Bulağ",
+     "year": 1647,
+     "source": "NM-WA-004",
+     "kind": "waqf"
+    },
+    {
+     "form": "Сары-Булахъ",
+     "year": 1854,
+     "source": "NM-CA-005",
+     "kind": "cameral"
+    },
+    {
+     "form": "Sarıbulaq",
+     "year": 1933,
+     "source": "NM-CE-006",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«sarı» və «bulaq» sözlərindən",
+    "ru": "из слов «сары» (жёлтый) и «булаг» (родник)",
+    "en": "from \"sarı\" (yellow) and \"bulaq\" (spring)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-004",
+     "kind": "waqf",
+     "year": 1647
+    },
+    {
+     "code": "NM-CA-005",
+     "kind": "cameral",
+     "year": 1854
+    },
+    {
+     "code": "NM-CE-006",
+     "kind": "census",
+     "year": 1933
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.94,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "qizilkend",
+   "names": {
+    "az": "Qızılkənd",
+    "ru": "Гызылкенд",
+    "en": "Gizilkend"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    48.1,
+    40.55
+   ],
+   "historicalForms": [
+    {
+     "form": "Qızılkend",
+     "year": 1727,
+     "source": "NM-TA-007",
+     "kind": "tax"
+    },
+    {
+     "form": "Кызылкендъ",
+     "year": 1868,
+     "source": "NM-CA-008",
+     "kind": "cameral"
+    },
+    {
+     "form": "Qızılkənd",
+     "year": 1958,
+     "source": "NM-MA-009",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qızıl» və «kənd» sözlərindən",
+    "ru": "из слов «гызыл» (золотой) и «кенд» (село)",
+    "en": "from \"qızıl\" (golden) and \"kənd\" (village)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-007",
+     "kind": "tax",
+     "year": 1727
+    },
+    {
+     "code": "NM-CA-008",
+     "kind": "cameral",
+     "year": 1868
+    },
+    {
+     "code": "NM-MA-009",
+     "kind": "map",
+     "year": 1958
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.91,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "agcaqala",
+   "names": {
+    "az": "Ağcaqala",
+    "ru": "Агджагала",
+    "en": "Aghjagala"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    47.7,
+    39.95
+   ],
+   "historicalForms": [
+    {
+     "form": "Akça Kale",
+     "year": 1588,
+     "source": "NM-CH-010",
+     "kind": "chronicle"
+    },
+    {
+     "form": "Агджа-Кала",
+     "year": 1823,
+     "source": "NM-MI-011",
+     "kind": "military"
+    },
+    {
+     "form": "Ağcaqala",
+     "year": 1927,
+     "source": "NM-CE-012",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«ağca» və «qala» sözlərindən",
+    "ru": "из слов «агджа» (беловатый) и «гала» (крепость)",
+    "en": "from \"ağca\" (whitish) and \"qala\" (fortress)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-010",
+     "kind": "chronicle",
+     "year": 1588
+    },
+    {
+     "code": "NM-MI-011",
+     "kind": "military",
+     "year": 1823
+    },
+    {
+     "code": "NM-CE-012",
+     "kind": "census",
+     "year": 1927
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.95,
+   "verifiedBy": "E-01"
+  },
+  {
+   "id": "demirciler",
+   "names": {
+    "az": "Dəmirçilər",
+    "ru": "Демирчилер",
+    "en": "Damirchilar"
+   },
+   "type": "oikonym",
+   "region": "west",
+   "coordinates": [
+    46.55,
+    40.65
+   ],
+   "historicalForms": [
+    {
+     "form": "Demirçiler",
+     "year": 1702,
+     "source": "NM-TA-013",
+     "kind": "tax"
+    },
+    {
+     "form": "Демирчиляр",
+     "year": 1886,
+     "source": "NM-CA-014",
+     "kind": "cameral"
+    }
+   ],
+   "meaning": {
+    "az": "«dəmirçi» sözündən, cəm şəkilçisi ilə",
+    "ru": "от слова «демирчи» (кузнец) с аффиксом множ. числа",
+    "en": "from \"dəmirçi\" (smith) with the plural suffix"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-013",
+     "kind": "tax",
+     "year": 1702
+    },
+    {
+     "code": "NM-CA-014",
+     "kind": "cameral",
+     "year": 1886
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.78
+  },
+  {
+   "id": "bagliqislaq",
+   "names": {
+    "az": "Bağlıqışlaq",
+    "ru": "Баглыгышлаг",
+    "en": "Baghligishlag"
+   },
+   "type": "oikonym",
+   "region": "ne",
+   "coordinates": [
+    48.55,
+    41.25
+   ],
+   "historicalForms": [
+    {
+     "form": "Bağlu Kışlak",
+     "year": 1661,
+     "source": "NM-WA-015",
+     "kind": "waqf"
+    },
+    {
+     "form": "Баглы-Кишлагъ",
+     "year": 1840,
+     "source": "NM-MI-016",
+     "kind": "military"
+    },
+    {
+     "form": "Bağlıqışlaq",
+     "year": 1931,
+     "source": "NM-CE-017",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«bağlı» və «qışlaq» sözlərindən",
+    "ru": "из слов «баглы» (с садами) и «гышлаг» (зимовье)",
+    "en": "from \"bağlı\" (with gardens) and \"qışlaq\" (winter quarters)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-015",
+     "kind": "waqf",
+     "year": 1661
+    },
+    {
+     "code": "NM-MI-016",
+     "kind": "military",
+     "year": 1840
+    },
+    {
+     "code": "NM-CE-017",
+     "kind": "census",
+     "year": 1931
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.89,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "cinarliyurd",
+   "names": {
+    "az": "Çinarlıyurd",
+    "ru": "Чинарлыюрд",
+    "en": "Chinarliyurd"
+   },
+   "type": "oikonym",
+   "region": "west",
+   "coordinates": [
+    46,
+    41
+   ],
+   "historicalForms": [
+    {
+     "form": "Çinarlu Yurt",
+     "year": 1615,
+     "source": "NM-CH-018",
+     "kind": "chronicle"
+    },
+    {
+     "form": "Чинарлы-Юртъ",
+     "year": 1859,
+     "source": "NM-CA-019",
+     "kind": "cameral"
+    },
+    {
+     "form": "Çinarlıyurd",
+     "year": 1939,
+     "source": "NM-MA-020",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«çinarlı» və «yurd» sözlərindən",
+    "ru": "из слов «чинарлы» (с чинарами) и «юрд» (стан)",
+    "en": "from \"çinarlı\" (with plane trees) and \"yurd\" (homestead)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-018",
+     "kind": "chronicle",
+     "year": 1615
+    },
+    {
+     "code": "NM-CA-019",
+     "kind": "cameral",
+     "year": 1859
+    },
+    {
+     "code": "NM-MA-020",
+     "kind": "map",
+     "year": 1939
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.92,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "duzlutepe",
+   "names": {
+    "az": "Duzlutəpə",
+    "ru": "Дузлутепе",
+    "en": "Duzlutepe"
+   },
+   "type": "oikonym",
+   "region": "south",
+   "coordinates": [
+    48.9,
+    39.9
+   ],
+   "historicalForms": [
+    {
+     "form": "Дузлы-Тепе",
+     "year": 1874,
+     "source": "NM-CA-021",
+     "kind": "cameral"
+    },
+    {
+     "form": "Duzlutəpə",
+     "year": 1946,
+     "source": "NM-MA-022",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«duzlu» və «təpə» sözlərindən",
+    "ru": "из слов «дузлу» (солёный) и «тепе» (холм)",
+    "en": "from \"duzlu\" (salty) and \"təpə\" (hill)"
+   },
+   "sources": [
+    {
+     "code": "NM-CA-021",
+     "kind": "cameral",
+     "year": 1874
+    },
+    {
+     "code": "NM-MA-022",
+     "kind": "map",
+     "year": 1946
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.71
+  },
+  {
+   "id": "yeddiqapi",
+   "names": {
+    "az": "Yeddiqapı",
+    "ru": "Еддигапы",
+    "en": "Yeddigapi"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    47.1,
+    40.25
+   ],
+   "historicalForms": [
+    {
+     "form": "Yedi Kapu",
+     "year": 1574,
+     "source": "NM-CH-023",
+     "kind": "chronicle"
+    },
+    {
+     "form": "Йедди-Капы",
+     "year": 1819,
+     "source": "NM-MI-024",
+     "kind": "military"
+    },
+    {
+     "form": "Yeddiqapı",
+     "year": 1925,
+     "source": "NM-CE-025",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«yeddi» və «qapı» sözlərindən",
+    "ru": "из слов «едди» (семь) и «гапы» (ворота)",
+    "en": "from \"yeddi\" (seven) and \"qapı\" (gate)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-023",
+     "kind": "chronicle",
+     "year": 1574
+    },
+    {
+     "code": "NM-MI-024",
+     "kind": "military",
+     "year": 1819
+    },
+    {
+     "code": "NM-CE-025",
+     "kind": "census",
+     "year": 1925
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.96,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "kehrizobasi",
+   "names": {
+    "az": "Kəhrizobası",
+    "ru": "Кяхризобасы",
+    "en": "Kahrizobasi"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    47.95,
+    40.15
+   ],
+   "historicalForms": [
+    {
+     "form": "Kehriz Obası",
+     "year": 1690,
+     "source": "NM-TA-026",
+     "kind": "tax"
+    },
+    {
+     "form": "Кягризъ-Оба",
+     "year": 1862,
+     "source": "NM-CA-027",
+     "kind": "cameral"
+    },
+    {
+     "form": "Kəhrizobası",
+     "year": 1937,
+     "source": "NM-CE-028",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«kəhriz» və «oba» sözlərindən",
+    "ru": "из слов «кяхриз» (подземный канал) и «оба» (поселение)",
+    "en": "from \"kəhriz\" (underground channel) and \"oba\" (hamlet)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-026",
+     "kind": "tax",
+     "year": 1690
+    },
+    {
+     "code": "NM-CA-027",
+     "kind": "cameral",
+     "year": 1862
+    },
+    {
+     "code": "NM-CE-028",
+     "kind": "census",
+     "year": 1937
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.88,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "balliqoruq",
+   "names": {
+    "az": "Ballıqoruq",
+    "ru": "Баллыгоруг",
+    "en": "Balligoruq"
+   },
+   "type": "oikonym",
+   "region": "ne",
+   "coordinates": [
+    48.25,
+    41.05
+   ],
+   "historicalForms": [
+    {
+     "form": "Баллы-Горукъ",
+     "year": 1891,
+     "source": "NM-CA-029",
+     "kind": "cameral"
+    },
+    {
+     "form": "Ballıqoruq",
+     "year": 1952,
+     "source": "NM-MA-030",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«ballı» və «qoruq» sözlərindən",
+    "ru": "из слов «баллы» (медовый) и «горуг» (заповедное место)",
+    "en": "from \"ballı\" (honeyed) and \"qoruq\" (reserve)"
+   },
+   "sources": [
+    {
+     "code": "NM-CA-029",
+     "kind": "cameral",
+     "year": 1891
+    },
+    {
+     "code": "NM-MA-030",
+     "kind": "map",
+     "year": 1952
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.74
+  },
+  {
+   "id": "daskorpulu",
+   "names": {
+    "az": "Daşkörpülü",
+    "ru": "Дашкёрпюлю",
+    "en": "Dashkorpulu"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    47.25,
+    40.45
+   ],
+   "historicalForms": [
+    {
+     "form": "Taş Köprülü",
+     "year": 1609,
+     "source": "NM-WA-031",
+     "kind": "waqf"
+    },
+    {
+     "form": "Дашъ-Кёрпюлю",
+     "year": 1847,
+     "source": "NM-MI-032",
+     "kind": "military"
+    },
+    {
+     "form": "Daşkörpülü",
+     "year": 1930,
+     "source": "NM-CE-033",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«daş» və «körpü» sözlərindən",
+    "ru": "из слов «даш» (камень) и «кёрпю» (мост)",
+    "en": "from \"daş\" (stone) and \"körpü\" (bridge)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-031",
+     "kind": "waqf",
+     "year": 1609
+    },
+    {
+     "code": "NM-MI-032",
+     "kind": "military",
+     "year": 1847
+    },
+    {
+     "code": "NM-CE-033",
+     "kind": "census",
+     "year": 1930
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.93,
+   "verifiedBy": "E-03"
+  },
+  {
+   "id": "soyudluova",
+   "names": {
+    "az": "Söyüdlüova",
+    "ru": "Сёюдлюова",
+    "en": "Soyudluova"
+   },
+   "type": "oikonym",
+   "region": "south",
+   "coordinates": [
+    48.7,
+    38.85
+   ],
+   "historicalForms": [
+    {
+     "form": "Söğütlü Ova",
+     "year": 1679,
+     "source": "NM-TA-034",
+     "kind": "tax"
+    },
+    {
+     "form": "Сёгютлю-Ова",
+     "year": 1836,
+     "source": "NM-CA-035",
+     "kind": "cameral"
+    },
+    {
+     "form": "Söyüdlüova",
+     "year": 1948,
+     "source": "NM-MA-036",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«söyüdlü» və «ova» sözlərindən",
+    "ru": "из слов «сёюдлю» (ивовый) и «ова» (равнина)",
+    "en": "from \"söyüdlü\" (with willows) and \"ova\" (plain)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-034",
+     "kind": "tax",
+     "year": 1679
+    },
+    {
+     "code": "NM-CA-035",
+     "kind": "cameral",
+     "year": 1836
+    },
+    {
+     "code": "NM-MA-036",
+     "kind": "map",
+     "year": 1948
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.9,
+   "verifiedBy": "E-03"
+  },
+  {
+   "id": "durnaliyurd",
+   "names": {
+    "az": "Durnalıyurd",
+    "ru": "Дурналыюрд",
+    "en": "Durnaliyurd"
+   },
+   "type": "oikonym",
+   "region": "center",
+   "coordinates": [
+    47.5,
+    40.7
+   ],
+   "historicalForms": [
+    {
+     "form": "Turnalu Yurt",
+     "year": 1736,
+     "source": "NM-TA-037",
+     "kind": "tax"
+    },
+    {
+     "form": "Дурналы-Юртъ",
+     "year": 1871,
+     "source": "NM-CA-038",
+     "kind": "cameral"
+    },
+    {
+     "form": "Durnalıyurd",
+     "year": 1941,
+     "source": "NM-CE-039",
+     "kind": "census"
+    }
+   ],
+   "meaning": {
+    "az": "«durnalı» və «yurd» sözlərindən",
+    "ru": "из слов «дурналы» (журавлиный) и «юрд» (стан)",
+    "en": "from \"durnalı\" (of cranes) and \"yurd\" (homestead)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-037",
+     "kind": "tax",
+     "year": 1736
+    },
+    {
+     "code": "NM-CA-038",
+     "kind": "cameral",
+     "year": 1871
+    },
+    {
+     "code": "NM-CE-039",
+     "kind": "census",
+     "year": 1941
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.87,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "gumuscay",
+   "names": {
+    "az": "Gümüşçay",
+    "ru": "Гюмюшчай",
+    "en": "Gumushchay"
+   },
+   "type": "hydronym",
+   "region": "nw",
+   "coordinates": [
+    47.45,
+    41
+   ],
+   "historicalForms": [
+    {
+     "form": "Gümiş Çay",
+     "year": 1593,
+     "source": "NM-TA-040",
+     "kind": "tax"
+    },
+    {
+     "form": "р. Кумушъ-чай",
+     "year": 1831,
+     "source": "NM-MI-041",
+     "kind": "military"
+    },
+    {
+     "form": "Gümüşçay",
+     "year": 1929,
+     "source": "NM-MA-042",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«gümüş» və «çay» sözlərindən",
+    "ru": "из слов «гюмюш» (серебро) и «чай» (река)",
+    "en": "from \"gümüş\" (silver) and \"çay\" (river)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-040",
+     "kind": "tax",
+     "year": 1593
+    },
+    {
+     "code": "NM-MI-041",
+     "kind": "military",
+     "year": 1831
+    },
+    {
+     "code": "NM-MA-042",
+     "kind": "map",
+     "year": 1929
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.98,
+   "verifiedBy": "E-01"
+  },
+  {
+   "id": "goycekcay",
+   "names": {
+    "az": "Göyçəkçay",
+    "ru": "Гёйчекчай",
+    "en": "Goychakchay"
+   },
+   "type": "hydronym",
+   "region": "nw",
+   "coordinates": [
+    47.2,
+    40.95
+   ],
+   "historicalForms": [
+    {
+     "form": "Gökçek Çay",
+     "year": 1652,
+     "source": "NM-CH-043",
+     "kind": "chronicle"
+    },
+    {
+     "form": "р. Гёкчекъ",
+     "year": 1858,
+     "source": "NM-MI-044",
+     "kind": "military"
+    },
+    {
+     "form": "Göyçəkçay",
+     "year": 1934,
+     "source": "NM-MA-045",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«göyçək» və «çay» sözlərindən",
+    "ru": "из слов «гёйчек» (голубоватый) и «чай» (река)",
+    "en": "from \"göyçək\" (bluish) and \"çay\" (river)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-043",
+     "kind": "chronicle",
+     "year": 1652
+    },
+    {
+     "code": "NM-MI-044",
+     "kind": "military",
+     "year": 1858
+    },
+    {
+     "code": "NM-MA-045",
+     "kind": "map",
+     "year": 1934
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.92,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "qaynarbulaq",
+   "names": {
+    "az": "Qaynarbulaq",
+    "ru": "Гайнарбулаг",
+    "en": "Gaynarbulag"
+   },
+   "type": "hydronym",
+   "region": "west",
+   "coordinates": [
+    46.45,
+    40.85
+   ],
+   "historicalForms": [
+    {
+     "form": "Kaynar Bulak",
+     "year": 1621,
+     "source": "NM-WA-046",
+     "kind": "waqf"
+    },
+    {
+     "form": "ист. Кайнаръ-Булахъ",
+     "year": 1849,
+     "source": "NM-CA-047",
+     "kind": "cameral"
+    },
+    {
+     "form": "Qaynarbulaq",
+     "year": 1936,
+     "source": "NM-MA-048",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qaynar» və «bulaq» sözlərindən",
+    "ru": "из слов «гайнар» (кипящий) и «булаг» (родник)",
+    "en": "from \"qaynar\" (boiling) and \"bulaq\" (spring)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-046",
+     "kind": "waqf",
+     "year": 1621
+    },
+    {
+     "code": "NM-CA-047",
+     "kind": "cameral",
+     "year": 1849
+    },
+    {
+     "code": "NM-MA-048",
+     "kind": "map",
+     "year": 1936
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.95,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "durnagolu",
+   "names": {
+    "az": "Durnagölü",
+    "ru": "Дурнагёлю",
+    "en": "Durnagolu"
+   },
+   "type": "hydronym",
+   "region": "south",
+   "coordinates": [
+    48.35,
+    39.7
+   ],
+   "historicalForms": [
+    {
+     "form": "оз. Дурна-Гёль",
+     "year": 1883,
+     "source": "NM-MI-049",
+     "kind": "military"
+    },
+    {
+     "form": "Durnagölü",
+     "year": 1955,
+     "source": "NM-MA-050",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«durna» və «göl» sözlərindən",
+    "ru": "из слов «дурна» (журавль) и «гёль» (озеро)",
+    "en": "from \"durna\" (crane) and \"göl\" (lake)"
+   },
+   "sources": [
+    {
+     "code": "NM-MI-049",
+     "kind": "military",
+     "year": 1883
+    },
+    {
+     "code": "NM-MA-050",
+     "kind": "map",
+     "year": 1955
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.69
+  },
+  {
+   "id": "soyuqsu",
+   "names": {
+    "az": "Soyuqsu",
+    "ru": "Союгсу",
+    "en": "Soyugsu"
+   },
+   "type": "hydronym",
+   "region": "ne",
+   "coordinates": [
+    48.45,
+    41.4
+   ],
+   "historicalForms": [
+    {
+     "form": "Soğuk Su",
+     "year": 1598,
+     "source": "NM-TA-051",
+     "kind": "tax"
+    },
+    {
+     "form": "р. Согукъ-Су",
+     "year": 1828,
+     "source": "NM-MI-052",
+     "kind": "military"
+    },
+    {
+     "form": "Soyuqsu",
+     "year": 1932,
+     "source": "NM-MA-053",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«soyuq» və «su» sözlərindən",
+    "ru": "из слов «союг» (холодный) и «су» (вода)",
+    "en": "from \"soyuq\" (cold) and \"su\" (water)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-051",
+     "kind": "tax",
+     "year": 1598
+    },
+    {
+     "code": "NM-MI-052",
+     "kind": "military",
+     "year": 1828
+    },
+    {
+     "code": "NM-MA-053",
+     "kind": "map",
+     "year": 1932
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.94,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "qamisligol",
+   "names": {
+    "az": "Qamışlıgöl",
+    "ru": "Гамышлыгёль",
+    "en": "Gamishligol"
+   },
+   "type": "hydronym",
+   "region": "south",
+   "coordinates": [
+    48.75,
+    39.35
+   ],
+   "historicalForms": [
+    {
+     "form": "Kamışlu Göl",
+     "year": 1714,
+     "source": "NM-TA-054",
+     "kind": "tax"
+    },
+    {
+     "form": "оз. Камышлы-Гёль",
+     "year": 1866,
+     "source": "NM-MI-055",
+     "kind": "military"
+    },
+    {
+     "form": "Qamışlıgöl",
+     "year": 1944,
+     "source": "NM-MA-056",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qamışlı» və «göl» sözlərindən",
+    "ru": "из слов «гамышлы» (камышовый) и «гёль» (озеро)",
+    "en": "from \"qamışlı\" (reedy) and \"göl\" (lake)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-054",
+     "kind": "tax",
+     "year": 1714
+    },
+    {
+     "code": "NM-MI-055",
+     "kind": "military",
+     "year": 1866
+    },
+    {
+     "code": "NM-MA-056",
+     "kind": "map",
+     "year": 1944
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.86,
+   "verifiedBy": "E-03"
+  },
+  {
+   "id": "aglarcay",
+   "names": {
+    "az": "Ağlarçay",
+    "ru": "Агларчай",
+    "en": "Aghlarchay"
+   },
+   "type": "hydronym",
+   "region": "nw",
+   "coordinates": [
+    46.85,
+    41.2
+   ],
+   "historicalForms": [
+    {
+     "form": "Aglar Çay",
+     "year": 1758,
+     "source": "NM-CH-057",
+     "kind": "chronicle"
+    },
+    {
+     "form": "р. Агларъ",
+     "year": 1897,
+     "source": "NM-MI-058",
+     "kind": "military"
+    }
+   ],
+   "meaning": {
+    "az": "«ağlar» və «çay» sözlərindən",
+    "ru": "из слов «аглар» и «чай» (река)",
+    "en": "from \"ağlar\" and \"çay\" (river)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-057",
+     "kind": "chronicle",
+     "year": 1758
+    },
+    {
+     "code": "NM-MI-058",
+     "kind": "military",
+     "year": 1897
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.81
+  },
+  {
+   "id": "mermerbulaq",
+   "names": {
+    "az": "Mərmərbulaq",
+    "ru": "Мярмярбулаг",
+    "en": "Marmarbulag"
+   },
+   "type": "hydronym",
+   "region": "ne",
+   "coordinates": [
+    48.05,
+    41.15
+   ],
+   "historicalForms": [
+    {
+     "form": "Mermer Bulak",
+     "year": 1683,
+     "source": "NM-WA-059",
+     "kind": "waqf"
+    },
+    {
+     "form": "ист. Мермеръ-Булахъ",
+     "year": 1852,
+     "source": "NM-CA-060",
+     "kind": "cameral"
+    },
+    {
+     "form": "Mərmərbulaq",
+     "year": 1938,
+     "source": "NM-MA-061",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«mərmər» və «bulaq» sözlərindən",
+    "ru": "из слов «мярмяр» (мрамор) и «булаг» (родник)",
+    "en": "from \"mərmər\" (marble) and \"bulaq\" (spring)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-059",
+     "kind": "waqf",
+     "year": 1683
+    },
+    {
+     "code": "NM-CA-060",
+     "kind": "cameral",
+     "year": 1852
+    },
+    {
+     "code": "NM-MA-061",
+     "kind": "map",
+     "year": 1938
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.9,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "qivrimcay",
+   "names": {
+    "az": "Qıvrımçay",
+    "ru": "Гыврымчай",
+    "en": "Givrimchay"
+   },
+   "type": "hydronym",
+   "region": "south",
+   "coordinates": [
+    48.6,
+    39.05
+   ],
+   "historicalForms": [
+    {
+     "form": "Kıvrım Çay",
+     "year": 1705,
+     "source": "NM-TA-062",
+     "kind": "tax"
+    },
+    {
+     "form": "р. Кыврымъ-чай",
+     "year": 1844,
+     "source": "NM-MI-063",
+     "kind": "military"
+    },
+    {
+     "form": "Qıvrımçay",
+     "year": 1950,
+     "source": "NM-MA-064",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qıvrım» və «çay» sözlərindən",
+    "ru": "из слов «гыврым» (извилистый) и «чай» (река)",
+    "en": "from \"qıvrım\" (winding) and \"çay\" (river)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-062",
+     "kind": "tax",
+     "year": 1705
+    },
+    {
+     "code": "NM-MI-063",
+     "kind": "military",
+     "year": 1844
+    },
+    {
+     "code": "NM-MA-064",
+     "kind": "map",
+     "year": 1950
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.89,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "qartaldas",
+   "names": {
+    "az": "Qartaldaş",
+    "ru": "Гарталдаш",
+    "en": "Gartaldash"
+   },
+   "type": "oronym",
+   "region": "nw",
+   "coordinates": [
+    47.6,
+    41.12
+   ],
+   "historicalForms": [
+    {
+     "form": "Kartal Taş",
+     "year": 1606,
+     "source": "NM-CH-065",
+     "kind": "chronicle"
+    },
+    {
+     "form": "г. Карталъ-Ташъ",
+     "year": 1837,
+     "source": "NM-MI-066",
+     "kind": "military"
+    },
+    {
+     "form": "Qartaldaş",
+     "year": 1928,
+     "source": "NM-MA-067",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qartal» və «daş» sözlərindən",
+    "ru": "из слов «гартал» (орёл) и «даш» (камень)",
+    "en": "from \"qartal\" (eagle) and \"daş\" (rock)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-065",
+     "kind": "chronicle",
+     "year": 1606
+    },
+    {
+     "code": "NM-MI-066",
+     "kind": "military",
+     "year": 1837
+    },
+    {
+     "code": "NM-MA-067",
+     "kind": "map",
+     "year": 1928
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.96,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "buludlutepe",
+   "names": {
+    "az": "Buludlutəpə",
+    "ru": "Булудлутепе",
+    "en": "Buludlutepe"
+   },
+   "type": "oronym",
+   "region": "nw",
+   "coordinates": [
+    46.6,
+    41.3
+   ],
+   "historicalForms": [
+    {
+     "form": "Bulutlu Tepe",
+     "year": 1667,
+     "source": "NM-TA-068",
+     "kind": "tax"
+    },
+    {
+     "form": "г. Булутлу-Тепе",
+     "year": 1861,
+     "source": "NM-MI-069",
+     "kind": "military"
+    },
+    {
+     "form": "Buludlutəpə",
+     "year": 1943,
+     "source": "NM-MA-070",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«buludlu» və «təpə» sözlərindən",
+    "ru": "из слов «булудлу» (облачный) и «тепе» (холм)",
+    "en": "from \"buludlu\" (cloudy) and \"təpə\" (hill)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-068",
+     "kind": "tax",
+     "year": 1667
+    },
+    {
+     "code": "NM-MI-069",
+     "kind": "military",
+     "year": 1861
+    },
+    {
+     "code": "NM-MA-070",
+     "kind": "map",
+     "year": 1943
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.91,
+   "verifiedBy": "E-04"
+  },
+  {
+   "id": "yasilyal",
+   "names": {
+    "az": "Yaşılyal",
+    "ru": "Яшылъял",
+    "en": "Yashilyal"
+   },
+   "type": "oronym",
+   "region": "south",
+   "coordinates": [
+    48.3,
+    38.75
+   ],
+   "historicalForms": [
+    {
+     "form": "Yaşıl Yal",
+     "year": 1695,
+     "source": "NM-WA-071",
+     "kind": "waqf"
+    },
+    {
+     "form": "хр. Яшилъ-Ялъ",
+     "year": 1879,
+     "source": "NM-MI-072",
+     "kind": "military"
+    },
+    {
+     "form": "Yaşılyal",
+     "year": 1949,
+     "source": "NM-MA-073",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«yaşıl» və «yal» sözlərindən",
+    "ru": "из слов «яшыл» (зелёный) и «ял» (хребет)",
+    "en": "from \"yaşıl\" (green) and \"yal\" (ridge)"
+   },
+   "sources": [
+    {
+     "code": "NM-WA-071",
+     "kind": "waqf",
+     "year": 1695
+    },
+    {
+     "code": "NM-MI-072",
+     "kind": "military",
+     "year": 1879
+    },
+    {
+     "code": "NM-MA-073",
+     "kind": "map",
+     "year": 1949
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.93,
+   "verifiedBy": "E-01"
+  },
+  {
+   "id": "deveboynu",
+   "names": {
+    "az": "Dəvəboynu",
+    "ru": "Девебойну",
+    "en": "Daveboynu"
+   },
+   "type": "oronym",
+   "region": "west",
+   "coordinates": [
+    46.35,
+    40.25
+   ],
+   "historicalForms": [
+    {
+     "form": "пер. Деве-Бойну",
+     "year": 1888,
+     "source": "NM-MI-074",
+     "kind": "military"
+    },
+    {
+     "form": "Dəvəboynu",
+     "year": 1957,
+     "source": "NM-MA-075",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«dəvə» və «boyun» sözlərindən",
+    "ru": "из слов «деве» (верблюд) и «бойун» (шея)",
+    "en": "from \"dəvə\" (camel) and \"boyun\" (neck)"
+   },
+   "sources": [
+    {
+     "code": "NM-MI-074",
+     "kind": "military",
+     "year": 1888
+    },
+    {
+     "code": "NM-MA-075",
+     "kind": "map",
+     "year": 1957
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.76
+  },
+  {
+   "id": "qayalidag",
+   "names": {
+    "az": "Qayalıdağ",
+    "ru": "Гаялыдаг",
+    "en": "Gayalidag"
+   },
+   "type": "oronym",
+   "region": "ne",
+   "coordinates": [
+    48.2,
+    41.25
+   ],
+   "historicalForms": [
+    {
+     "form": "Kayalu Dağ",
+     "year": 1582,
+     "source": "NM-CH-076",
+     "kind": "chronicle"
+    },
+    {
+     "form": "г. Каялы-Дагъ",
+     "year": 1826,
+     "source": "NM-MI-077",
+     "kind": "military"
+    },
+    {
+     "form": "Qayalıdağ",
+     "year": 1926,
+     "source": "NM-MA-078",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«qayalı» və «dağ» sözlərindən",
+    "ru": "из слов «гаялы» (скалистый) и «даг» (гора)",
+    "en": "from \"qayalı\" (rocky) and \"dağ\" (mountain)"
+   },
+   "sources": [
+    {
+     "code": "NM-CH-076",
+     "kind": "chronicle",
+     "year": 1582
+    },
+    {
+     "code": "NM-MI-077",
+     "kind": "military",
+     "year": 1826
+    },
+    {
+     "code": "NM-MA-078",
+     "kind": "map",
+     "year": 1926
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.95,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "ulduzyali",
+   "names": {
+    "az": "Ulduzyalı",
+    "ru": "Улдузъялы",
+    "en": "Ulduzyali"
+   },
+   "type": "oronym",
+   "region": "west",
+   "coordinates": [
+    46.2,
+    40.75
+   ],
+   "historicalForms": [
+    {
+     "form": "Yıldız Yalı",
+     "year": 1721,
+     "source": "NM-TA-079",
+     "kind": "tax"
+    },
+    {
+     "form": "хр. Улдузъ-Ялы",
+     "year": 1864,
+     "source": "NM-MI-080",
+     "kind": "military"
+    },
+    {
+     "form": "Ulduzyalı",
+     "year": 1947,
+     "source": "NM-MA-081",
+     "kind": "map"
+    }
+   ],
+   "meaning": {
+    "az": "«ulduz» və «yal» sözlərindən",
+    "ru": "из слов «улдуз» (звезда) и «ял» (хребет)",
+    "en": "from \"ulduz\" (star) and \"yal\" (ridge)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-079",
+     "kind": "tax",
+     "year": 1721
+    },
+    {
+     "code": "NM-MI-080",
+     "kind": "military",
+     "year": 1864
+    },
+    {
+     "code": "NM-MA-081",
+     "kind": "map",
+     "year": 1947
+    }
+   ],
+   "status": "verified",
+   "confidence": 0.88,
+   "verifiedBy": "E-02"
+  },
+  {
+   "id": "kuleklidag",
+   "names": {
+    "az": "Küləklidağ",
+    "ru": "Кюлеклидаг",
+    "en": "Kulaklidag"
+   },
+   "type": "oronym",
+   "region": "ne",
+   "coordinates": [
+    48.4,
+    40.8
+   ],
+   "historicalForms": [
+    {
+     "form": "Küleklü Dağ",
+     "year": 1744,
+     "source": "NM-TA-082",
+     "kind": "tax"
+    },
+    {
+     "form": "г. Кюлеклю-Дагъ",
+     "year": 1893,
+     "source": "NM-MI-083",
+     "kind": "military"
+    }
+   ],
+   "meaning": {
+    "az": "«küləkli» və «dağ» sözlərindən",
+    "ru": "из слов «кюлекли» (ветреный) и «даг» (гора)",
+    "en": "from \"küləkli\" (windy) and \"dağ\" (mountain)"
+   },
+   "sources": [
+    {
+     "code": "NM-TA-082",
+     "kind": "tax",
+     "year": 1744
+    },
+    {
+     "code": "NM-MI-083",
+     "kind": "military",
+     "year": 1893
+    }
+   ],
+   "status": "pending",
+   "confidence": 0.83
+  }
+ ]
+}

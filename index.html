@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="az" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1E0B3A" />
+    <meta name="description" content="Ağıllı Toponim Atlası — arxiv mətnlərindən çıxarılan, ekspertlər tərəfindən yoxlanan yer adlarının interaktiv atlası." />
+    <title>Ağıllı Toponim Atlası</title>
+    <link rel="preload" as="image" type="image/webp" media="(min-width: 1024px)" imagesrcset="/hero/wide-dark-1280.webp 1280w, /hero/wide-dark.webp 2400w" imagesizes="max(100vw, 160vh)" fetchpriority="high" />
+    <link rel="preload" as="image" type="image/webp" media="(max-width: 1023px)" href="/hero/tall-dark.webp" />
+    <script>
+      try {
+        var t = localStorage.getItem('ta-theme');
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
