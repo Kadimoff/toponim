@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from 'react'
 import * as maplibregl from 'maplibre-gl'
+// MapLibre 6 resolves its worker relative to its own chunk; the bundler does not emit it, so hand it the URL.
+import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import type { Map as MLMap, Marker, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import type { Lang, Toponym } from '../../lib/data'
 import { useThemeValue } from '../../lib/theme'
 import { AZ_BOUNDS, loadBaseStyle, tintStyle } from './mapStyle'
 import { SchematicMap } from './SchematicMap'
+
+maplibregl.setWorkerUrl(workerUrl)
 
 export interface MapCanvasProps {
   toponyms: Toponym[]
