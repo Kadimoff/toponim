@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { Component, useEffect, useRef, useState, type ReactNode } from 'react'
 import * as maplibregl from 'maplibre-gl'
 // MapLibre 6 resolves its worker relative to its own chunk; the bundler does not emit it, so hand it the URL.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
@@ -37,7 +37,52 @@ function pinSvg(state: 'default' | 'selected' | 'pending') {
   return `<svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="${disc}"/><circle cx="16" cy="16" r="12.4" fill="none" stroke="${ring}" stroke-width="1.4"${dash}/><path d="M16 7.6c-3.5 0-6.2 2.6-6.2 6.1 0 4.3 6.2 10.6 6.2 10.6s6.2-6.3 6.2-10.6c0-3.5-2.7-6.1-6.2-6.1z" fill="${pin}"/><circle cx="16" cy="13.7" r="2.2" fill="${disc}"/></svg>`
 }
 
+function hasWebGL(): boolean {
+  try {
+    const c = document.createElement('canvas')
+    return !!(c.getContext('webgl2') || c.getContext('webgl'))
+  } catch {
+    return false
+  }
+}
+
+class MapBoundary extends Component<{ fallback: ReactNode; children: ReactNode }, { failed: boolean }> {
+  state = { failed: false }
+  static getDerivedStateFromError() {
+    return { failed: true }
+  }
+  componentDidCatch(e: unknown) {
+    console.warn('[map] render error, schematic fallback:', e)
+  }
+  render() {
+    return this.state.failed ? this.props.fallback : this.props.children
+  }
+}
+
+/** Interactive map with a guaranteed schematic fallback (no WebGL, blocked tiles, slow network, render error). */
 export function MapCanvas(props: MapCanvasProps) {
+  return (
+    <MapBoundary
+      fallback={
+        <SchematicMap
+          toponyms={props.toponyms}
+          visibleIds={props.visibleIds}
+          selectedId={props.selectedId}
+          onSelect={props.onSelect}
+          lang={props.lang}
+          interactive={props.interactive}
+          pinLabel={props.pinLabel}
+          note={props.labels.fallback}
+          introStagger={props.introStagger}
+        />
+      }
+    >
+      <MapCanvasInner {...props} />
+    </MapBoundary>
+  )
+}
+
+function MapCanvasInner(props: MapCanvasProps) {
   const { toponyms, visibleIds, selectedId, onSelect, lang, interactive = true, padding, pinLabel, labels, introStagger, followSelection = true, onReady } = props
   const host = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MLMap | null>(null)
@@ -61,9 +106,22 @@ export function MapCanvas(props: MapCanvasProps) {
       setState('fallback')
     }
 
+    // one watchdog for the whole pipeline (style fetch + engine + first tiles): never leave a blank area
+    timeout = window.setTimeout(() => {
+      if (!mapRef.current || !mapRef.current.loaded()) {
+        ctrl.abort()
+        fail()
+      }
+    }, 12000)
+    if (!hasWebGL()) {
+      window.clearTimeout(timeout)
+      setState('fallback')
+      return
+    }
+
     loadBaseStyle(ctrl.signal)
       .then((base) => {
-        if (!host.current) return
+        if (!host.current || ctrl.signal.aborted) return
         baseRef.current = base
         const m = new maplibregl.Map({
           container: host.current,
@@ -93,9 +151,7 @@ export function MapCanvas(props: MapCanvasProps) {
             host.current?.querySelector('.maplibregl-ctrl-zoom-out')?.setAttribute('title', labels.zoomOut)
           })
         }
-        timeout = window.setTimeout(() => {
-          if (!m.loaded()) fail()
-        }, 12000)
+        m.getCanvas().addEventListener('webglcontextlost', () => fail(), { once: true })
         m.once('load', () => {
           window.clearTimeout(timeout)
           setState('ready')
@@ -107,7 +163,12 @@ export function MapCanvas(props: MapCanvasProps) {
         })
       })
       .catch((e) => {
-        if ((e as Error).name !== 'AbortError') fail()
+        // engine construction throws when WebGL exists but cannot create a context
+        if ((e as Error).name !== 'AbortError') {
+          console.warn('[map] falling back to schematic:', (e as Error).message)
+          window.clearTimeout(timeout)
+          fail()
+        }
       })
 
     return () => {

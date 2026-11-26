@@ -79,10 +79,31 @@ export function tintStyle(style: StyleSpecification, theme: Theme, lang: 'az' | 
   return { ...style, layers } as StyleSpecification
 }
 
+/** Snapshot of the Positron style served from our own origin (refresh: curl STYLE_URL > public/map/positron.json). */
+export const LOCAL_STYLE_URL = `${import.meta.env.BASE_URL}map/positron.json`
+
+async function fetchJson(url: string, signal: AbortSignal, ms: number) {
+  const t = new AbortController()
+  const timer = window.setTimeout(() => t.abort(), ms)
+  const onAbort = () => t.abort()
+  signal.addEventListener('abort', onAbort)
+  try {
+    const res = await fetch(url, { signal: t.signal })
+    if (!res.ok) throw new Error(`style ${res.status}`)
+    return (await res.json()) as StyleSpecification
+  } finally {
+    window.clearTimeout(timer)
+    signal.removeEventListener('abort', onAbort)
+  }
+}
+
 export async function loadBaseStyle(signal: AbortSignal): Promise<StyleSpecification> {
-  const res = await fetch(STYLE_URL, { signal })
-  if (!res.ok) throw new Error(`style ${res.status}`)
-  return (await res.json()) as StyleSpecification
+  try {
+    return await fetchJson(LOCAL_STYLE_URL, signal, 5000)
+  } catch (e) {
+    if (signal.aborted) throw e
+    return fetchJson(STYLE_URL, signal, 6000)
+  }
 }
 
 export function applyTheme(map: MLMap, base: StyleSpecification, theme: Theme, lang: 'az' | 'ru' | 'en') {
