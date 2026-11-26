@@ -108,6 +108,7 @@ export function DetailCard({ t, onClose }: { t: Toponym; onClose: () => void }) 
       <header className="flex items-start gap-3 px-5 pt-5 sm:px-6 sm:pt-6">
         <div className="min-w-0 flex-1">
           <div className="mb-3 flex flex-wrap items-center gap-2">
+            <SampleBadge compact />
             <span className="chip">{s.types[t.type]}</span>
             {t.status === 'verified' ? (
               <VerifiedBadge label={s.detail.verified} />

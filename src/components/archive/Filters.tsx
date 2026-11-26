@@ -160,7 +160,7 @@ export function ArcListItem({ it, selected, onSelect }: { it: ArcIndexItem; sele
         className="legend-dot"
         style={{
           background: selected ? '#F2B84B' : it.verification === 'sourced' ? '#6D28D9' : 'transparent',
-          border: it.verification === 'sourced' || selected ? '2px solid #DDD6FE' : '2px dashed var(--line-strong)',
+          border: it.verification === 'sourced' || selected ? '2px solid #DDD6FE' : '2px dashed #8B5CF6',
         }}
       />
       <span className="min-w-0 flex-1">

@@ -139,7 +139,7 @@ function Legend({ mobile }: { mobile: boolean }) {
   const [open, setOpen] = useState(!mobile)
   const rows: [React.CSSProperties, string][] = [
     [{ background: '#6D28D9', border: '2px solid #DDD6FE' }, a.atlas.lSourced],
-    [{ background: '#4C1D95', border: '2px dashed #DDD6FE' }, a.atlas.lReview],
+    [{ background: 'transparent', border: '2px dashed #8B5CF6' }, a.atlas.lReview],
     [{ background: '#F2B84B', border: '2px solid #FFF4DB' }, a.atlas.lSelected],
     [{ background: 'radial-gradient(circle at 35% 30%, #8b5cf6, #5b21b6)', border: '2px solid #DDD6FE', boxShadow: '0 0 0 3px rgba(139,92,246,0.28)' }, a.atlas.lCluster],
   ]
