@@ -2,7 +2,20 @@
 
 Bakı Slavyan Universiteti (dil və məzmun) və ADNSU (texnologiya) birgə layihəsinin Mədəniyyət Nazirliyinin qrant komissiyası üçün hazırlanmış yüksək dəqiqlikli demosu. AI arxiv mətnlərindən yer adlarını tapır, ekspertlər yoxlayır, interaktiv atlas hər adın tarixi formalarını, mənasını, mənbələrini və yerini göstərir.
 
-> **Bütün məlumatlar nümunədir.** 30 toponimin adları, tarixi formaları, illəri və arxiv şifrələri (`NM-…`) uydurmadır. Real yer adlarına yalan tarixi iddia yazmamaq üçün bilərəkdən belə edilib. Arayüzdə hər yerdə "Nümunə məlumat" yarlığı var.
+> **İki məlumat dəsti var.** *Rəqəmsal arxiv* (`#/arxiv`, atlasda default) real yer adlarıdır: 124 qeyd, hər iddia açıq mənbəyə (Wikidata, Vikipediya AZ/RU/EN konkret redaksiya, Wikimedia Commons) linklənir, mənbə tapılmayan xana boş qalır. *Demo nümunə* isə 30 uydurma toponimdir (adlar, formalar, illər, `NM-…` şifrələri), yalnız AI demo və atlasdakı "Demo nümunə" rejimində görünür və "Nümunə məlumat" yarlığı daşıyır. Heç bir real qeyd hələ ekspert tərəfindən təsdiqlənməyib.
+
+## Rəqəmsal arxiv: məlumat konveyeri
+
+```bash
+npm run data:fetch   # şəbəkə: Wikidata SPARQL + MediaWiki API → data/archive-cache/ (yalnız çatışmayanlar; --refresh hamısı)
+npm run data:build   # oflayn: cache → src/data/archive/{index.json,summary.json,entries/*.json} + public/data/toponim-arxiv.{json,csv}
+```
+
+- Seçim qaydası `scripts/archive/config.mjs`-dədir (Wikidata sinifləri, hər kateqoriyada neçə obyekt, ad/etimologiya bölmə başlıqları, 14 iqtisadi rayon).
+- `data/archive-cache/` repoda saxlanır, ona görə Docker build şəbəkəsiz təkrarlanır; `npm run build` heç bir xarici sorğu etmir.
+- Status: **Mənbəli** = adın tarixi forması və ya mənşəyi mənbədən sitat gətirilib; **Ekspert yoxlamalıdır** = belə mənbə tapılmayıb. Bu, ekspert təsdiqi deyil.
+- Hər qeyd ayrıca lazy chunk-dır (`import.meta.glob`), siyahı/xəritə yalnız yüngül indeksi yükləyir.
+- Lisenziya: Wikidata CC0, Vikipediya sitatları CC BY-SA 4.0, şəkillər öz lisenziyası ilə; toplu CC BY-SA 4.0.
 
 ## İşə salmaq
 
@@ -33,7 +46,9 @@ src/
   lib/data.ts               tiplər, dövr hesabı, AZ hərflərini qatlayan fold()
   lib/search.ts             Fuse.js: AZ / RU (kirildən translit) / EN / tarixi formalar üzrə səhvə dözümlü axtarış
   lib/extract.ts            AI demo SİMULYASİYASI — lüğət + Azərbaycan hal şəkilçilərinə dözümlü uyğunlaşdırma
-  lib/router.ts             hash routing: #/  #/atlas  #/atlas/:id  #/ai  #/stats  #/about
+  lib/router.ts             hash routing: #/  #/atlas  #/atlas/:id  #/arxiv[?filtrlər]  #/arxiv/:id  #/metod  #/ai  #/stats  #/about
+  lib/archive.ts            real arxiv: tiplər, axtarış, filtrlər, APA istinadı, lazy qeyd yükləmə
+  components/archive/       arxiv filtrləri, qeyd görünüşü (tam səhifə və atlas paneli), statistika
   i18n/strings.ts           bütün UI mətni üç dildə (AZ default)
   components/map/           MapLibre + OpenFreeMap (violet tonlu stil, dil üzrə etiketlər), sxematik ehtiyat xəritə
   components/atlas/         axtarış/filtr paneli, detal kartı (zaman xətti, mənbələr, paylaşma linki)

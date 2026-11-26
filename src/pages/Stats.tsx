@@ -6,6 +6,7 @@ import { CountUp } from '../components/CountUp'
 import { SampleBadge } from '../components/Shell'
 import { Footer } from '../components/Footer'
 import { useReducedMotion } from '../hooks/useReducedMotion'
+import { ArchiveStats } from '../components/archive/ArchiveStats'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -37,12 +38,13 @@ export default function Stats() {
 
   return (
     <>
-      <section className="mx-auto max-w-[1320px] px-4 pt-12 pb-20 sm:px-6 lg:pt-16">
+      <ArchiveStats />
+      <section className="mx-auto max-w-[1320px] border-t px-4 pt-12 pb-20 sm:px-6 lg:pt-16" style={{ borderColor: 'var(--line)' }}>
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <h1 className="text-[2.5rem] leading-[1.05] tracking-[-0.02em] sm:text-[3.25rem]" style={{ color: 'var(--ink)' }}>
+            <h2 className="text-[2rem] leading-[1.1] tracking-[-0.02em] sm:text-[2.5rem]" style={{ color: 'var(--ink)' }}>
               {t.stats.title}
-            </h1>
+            </h2>
             <p className="mt-4 mb-0 max-w-[40rem] text-[1.125rem]" style={{ color: 'var(--ink-soft)' }}>
               {t.stats.lede}
             </p>

@@ -2,7 +2,7 @@ import { m } from 'framer-motion'
 import { CountUp } from '../components/CountUp'
 import { ArrowRight, Check, ScanText } from 'lucide-react'
 import { useI18n } from '../i18n'
-import { TOPONYMS } from '../lib/data'
+import ARC_SUMMARY from '../data/archive/summary.json'
 import { href } from '../lib/router'
 import { HeroMapTall, HeroMapWide } from '../components/home/MapPreview'
 import { PinMark } from '../components/PinMark'
@@ -11,10 +11,6 @@ import { Footer } from '../components/Footer'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
-const N_TOPONYMS = TOPONYMS.length
-const N_FORMS = TOPONYMS.reduce((a, t) => a + t.historicalForms.length, 0)
-const N_VERIFIED = TOPONYMS.filter((t) => t.status === 'verified').length
-const N_CENTURIES = new Set(TOPONYMS.flatMap((t) => t.historicalForms.map((f) => Math.floor(f.year / 100)))).size
 
 /* -------- pipeline vignettes: each step shows the same word moving through the system -------- */
 function StepFind() {
@@ -150,15 +146,26 @@ export default function Home() {
       {/* ---------------- NUMBERS as a sentence ---------------- */}
       <section aria-labelledby="num-h" className="mx-auto max-w-[1320px] px-4 py-20 sm:px-6 lg:py-28">
         <div className="border-y py-12 lg:py-16" style={{ borderColor: 'var(--line)' }}>
-          <h2 id="num-h" className="mb-8 font-[family-name:var(--font-sans)] text-[1rem] font-medium tracking-normal" style={{ color: 'var(--ink-soft)' }}>
-            {t.home.numbersTitle}
-          </h2>
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <h2 id="num-h" className="font-[family-name:var(--font-sans)] text-[1rem] font-medium tracking-normal" style={{ color: 'var(--ink-soft)' }}>
+                {t.home.arcTitle}
+              </h2>
+              <p className="mt-1 mb-0 text-[0.9375rem]" style={{ color: 'var(--ink-faint)' }}>
+                {t.home.arcNote}
+              </p>
+            </div>
+            <a href={href({ page: 'archive' })} className="btn-quiet h-11 text-[0.9375rem]">
+              {t.home.arcCta}
+              <ArrowRight size={17} />
+            </a>
+          </div>
           <dl className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
             {[
-              { n: N_TOPONYMS, l: t.home.nToponyms },
-              { n: N_FORMS, l: t.home.nForms },
-              { n: N_VERIFIED, l: t.home.nVerified, gold: true },
-              { n: N_CENTURIES, l: t.home.nCenturies },
+              { n: ARC_SUMMARY.count, l: t.home.arcEntries },
+              { n: ARC_SUMMARY.forms, l: t.home.arcForms },
+              { n: ARC_SUMMARY.etymology, l: t.home.arcEtym, gold: true },
+              { n: ARC_SUMMARY.images, l: t.home.arcImages },
             ].map((x) => (
               <div key={x.l} className="flex flex-col-reverse">
                 <dt className="mt-1 text-[1rem]" style={{ color: 'var(--ink-soft)' }}>

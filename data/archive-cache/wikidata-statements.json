@@ -1,0 +1,1634 @@
+{
+ "Q9248": {
+  "officialNames": [
+   {
+    "name": "Bakı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q129352": {
+  "officialNames": [
+   {
+    "name": "Xankəndi",
+    "lang": "az",
+    "end": "1923-08-10T00:00:00Z"
+   },
+   {
+    "name": "Xankəndi",
+    "lang": "az",
+    "start": "1991-11-26T00:00:00Z"
+   },
+   {
+    "name": "Степанакерт",
+    "lang": "ru",
+    "start": "1923-08-10T00:00:00Z",
+    "end": "1991-11-26T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q131290": {
+  "officialNames": [
+   {
+    "name": "Елизаветполь",
+    "lang": "ru",
+    "start": "1804-01-01T00:00:00Z",
+    "end": "1918-07-30T00:00:00Z"
+   },
+   {
+    "name": "Ганджа",
+    "lang": "ru",
+    "start": "1918-07-30T00:00:00Z",
+    "end": "1935-02-20T00:00:00Z"
+   },
+   {
+    "name": "Gəncə",
+    "lang": "az",
+    "start": "1989-12-30T00:00:00Z"
+   },
+   {
+    "name": "Kirovabad",
+    "lang": "az",
+    "start": "1935-02-20T00:00:00Z",
+    "end": "1989-12-30T00:00:00Z"
+   },
+   {
+    "name": "Кировабад",
+    "lang": "ru",
+    "start": "1935-02-20T00:00:00Z",
+    "end": "1989-12-30T00:00:00Z"
+   },
+   {
+    "name": "Gəncə",
+    "lang": "az",
+    "start": "1918-07-30T00:00:00Z",
+    "end": "1935-02-20T00:00:00Z"
+   },
+   {
+    "name": "Yelizavetpol",
+    "lang": "az",
+    "start": "1804-01-01T00:00:00Z",
+    "end": "1918-07-30T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "0660-01-01T00:00:00Z",
+    "precision": 9
+   },
+   {
+    "prop": "P1249",
+    "time": "0836-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q179833": {
+  "officialNames": [
+   {
+    "name": "Сумгаит",
+    "lang": "ru",
+    "end": "1991-11-11T00:00:00Z"
+   },
+   {
+    "name": "Sumqayıt",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1949-11-22T00:00:00Z",
+    "precision": 11
+   },
+   {
+    "prop": "P1249",
+    "time": "1580-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q234783": {
+  "officialNames": [
+   {
+    "name": "Нуха",
+    "lang": "ru",
+    "start": "1846-01-01T00:00:00Z",
+    "end": "1968-03-15T00:00:00Z"
+   },
+   {
+    "name": "Nuxa",
+    "lang": "az",
+    "start": "1846-01-01T00:00:00Z",
+    "end": "1968-03-14T00:00:00Z"
+   },
+   {
+    "name": "Şəki",
+    "lang": "az",
+    "start": "1968-03-14T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q230104": {
+  "officialNames": [
+   {
+    "name": "Naxçıvan",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "-1499-01-01T00:00:00Z",
+    "precision": 9
+   },
+   {
+    "prop": "P1249",
+    "time": "0200-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q228811": {
+  "officialNames": [
+   {
+    "name": "Lənkəran",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P1249",
+    "time": "1357-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q158903": {
+  "officialNames": [
+   {
+    "name": "Şuşa",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1752-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q230932": {
+  "officialNames": [
+   {
+    "name": "Mingəçevir",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1946-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q241116": {
+  "officialNames": [
+   {
+    "name": "Şirvan",
+    "lang": "az",
+    "start": "2008-05-07T00:00:00Z"
+   },
+   {
+    "name": "Али-Байрамлы",
+    "lang": "ru",
+    "start": "1938-07-19T00:00:00Z",
+    "end": "2008-05-07T00:00:00Z"
+   },
+   {
+    "name": "Зубаўка",
+    "lang": "be",
+    "end": "1938-07-19T00:00:00Z"
+   },
+   {
+    "name": "Zubovka",
+    "lang": "az",
+    "end": "1938-07-19T00:00:00Z"
+   },
+   {
+    "name": "Əli-Bayramlı",
+    "lang": "az",
+    "start": "1938-07-19T00:00:00Z",
+    "end": "2008-05-07T00:00:00Z"
+   },
+   {
+    "name": "Шырван",
+    "lang": "be",
+    "start": "2008-05-07T00:00:00Z"
+   },
+   {
+    "name": "Зубовка",
+    "lang": "ru",
+    "end": "1938-07-19T00:00:00Z"
+   },
+   {
+    "name": "Алі-Байрамлы",
+    "lang": "be",
+    "start": "1938-07-19T00:00:00Z",
+    "end": "2008-05-07T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q388224": {
+  "officialNames": [
+   {
+    "name": "Şamaxı",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P1249",
+    "time": "0101-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q540844": {
+  "officialNames": [
+   {
+    "name": "Ağdam",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1701-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q152825": {
+  "officialNames": [
+   {
+    "name": "Naftalan",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1967-04-28T00:00:00Z",
+    "precision": 11
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q175459": {
+  "officialNames": [
+   {
+    "name": "Yevlax",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q244236": {
+  "officialNames": [
+   {
+    "name": "Qutqaşen",
+    "lang": "az",
+    "start": "1920-01-01T00:00:00Z",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Куткашен",
+    "lang": "ru",
+    "start": "1920-01-01T00:00:00Z",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Куткашин",
+    "lang": "ru",
+    "end": "1920-01-01T00:00:00Z"
+   },
+   {
+    "name": "Qutqaşın",
+    "lang": "az",
+    "end": "1920-01-01T00:00:00Z"
+   },
+   {
+    "name": "Габала",
+    "lang": "ru",
+    "start": "1991-02-08T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q842869": {
+  "officialNames": [
+   {
+    "name": "Bərdə",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q647982": {
+  "officialNames": [
+   {
+    "name": "Quba",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1401-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q266896": {
+  "officialNames": [
+   {
+    "name": "Astara",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1000883": {
+  "officialNames": [
+   {
+    "name": "Laçın",
+    "lang": "az",
+    "start": "1926-01-01T00:00:00Z"
+   },
+   {
+    "name": "Abdallar",
+    "lang": "az",
+    "end": "1926-01-01T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1643630": {
+  "officialNames": [
+   {
+    "name": "Kəlbəcər",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q642109": {
+  "officialNames": [
+   {
+    "name": "Xırdalan",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1983875": {
+  "officialNames": [
+   {
+    "name": "Ağcabədi",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1593-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q2148635": {
+  "officialNames": [
+   {
+    "name": "Petropavlovka",
+    "lang": "az",
+    "end": "1931-10-07T00:00:00Z"
+   },
+   {
+    "name": "Петропавловка",
+    "lang": "ru",
+    "start": "1887-01-01T00:00:00Z"
+   },
+   {
+    "name": "Sabirabad",
+    "lang": "az",
+    "start": "1931-10-07T00:00:00Z"
+   },
+   {
+    "name": "Qalaqayın",
+    "lang": "az",
+    "start": "1300-01-01T00:00:00Z",
+    "end": "1921-01-01T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1888-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1013454": {
+  "officialNames": [
+   {
+    "name": "Culfa",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "-0501-01-01T00:00:00Z",
+    "precision": 7
+   },
+   {
+    "prop": "P1249",
+    "time": "0501-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1976493": {
+  "officialNames": [
+   {
+    "name": "Ağstafa",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1018160": {
+  "officialNames": [
+   {
+    "name": "Xaçmaz",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1938-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q147548": {
+  "officialNames": [
+   {
+    "name": "Zaqatala",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q390783": {
+  "officialNames": [
+   {
+    "name": "Шамхор",
+    "lang": "ru",
+    "start": "1924-01-01T00:00:00Z",
+    "end": "1991-01-01T00:00:00Z"
+   },
+   {
+    "name": "Şəmkir",
+    "lang": "az",
+    "start": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Annenfeld",
+    "lang": "az",
+    "start": "1818-01-01T00:00:00Z",
+    "end": "1914-01-01T00:00:00Z"
+   },
+   {
+    "name": "Şamxor",
+    "lang": "az",
+    "start": "1924-01-01T00:00:00Z",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Annino",
+    "lang": "az",
+    "start": "1914-01-01T00:00:00Z",
+    "end": "1924-01-01T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P1249",
+    "time": "0401-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1017710": {
+  "officialNames": [
+   {
+    "name": "Qubadlı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q145715": {
+  "officialNames": [
+   {
+    "name": "Qusar",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1983932": {
+  "officialNames": [
+   {
+    "name": "Ağdaş",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1900-01-01T00:00:00Z",
+    "precision": 9
+   },
+   {
+    "prop": "P1249",
+    "time": "1501-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1000839": {
+  "officialNames": [
+   {
+    "name": "Ordubad",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1017662": {
+  "officialNames": [
+   {
+    "name": "Qax",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1822209": {
+  "officialNames": [
+   {
+    "name": "Göyçay",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q951906": {
+  "officialNames": [
+   {
+    "name": "Xocalı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1983868": {
+  "officialNames": [
+   {
+    "name": "Ağsu",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1735-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1989793": {
+  "officialNames": [
+   {
+    "name": "Balakən",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q249226": {
+  "officialNames": [
+   {
+    "name": "Zəngilan",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P1249",
+    "time": "1301-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q794712": {
+  "officialNames": [
+   {
+    "name": "Mardakert",
+    "lang": "az",
+    "start": "1939-09-17T00:00:00Z",
+    "end": "1991-11-26T00:00:00Z"
+   },
+   {
+    "name": "Ağdərə",
+    "lang": "az",
+    "start": "1991-11-26T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1000844": {
+  "officialNames": [
+   {
+    "name": "Xocavənd",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q642164": {
+  "officialNames": [
+   {
+    "name": "Jdanov",
+    "lang": "az",
+    "start": "1939-01-24T00:00:00Z",
+    "end": "1989-03-18T00:00:00Z"
+   },
+   {
+    "name": "Ждановск",
+    "lang": "ru",
+    "start": "1939-01-24T00:00:00Z",
+    "end": "1989-03-18T00:00:00Z"
+   },
+   {
+    "name": "Бейлаган",
+    "lang": "ru",
+    "start": "1989-03-19T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": [
+   {
+    "qid": "Q207879",
+    "az": "Andrey Jdanov",
+    "en": "Andrej Aleksandroviç Zhdanov"
+   }
+  ]
+ },
+ "Q1020627": {
+  "officialNames": [
+   {
+    "name": "Астрахан-Базар",
+    "lang": "ru",
+    "end": "1967-06-05T00:00:00Z"
+   },
+   {
+    "name": "Astarxanbazar",
+    "lang": "az",
+    "end": "1967-06-05T00:00:00Z"
+   },
+   {
+    "name": "Астрахан-Базар",
+    "lang": "be-tarask",
+    "end": "1967-06-05T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2268790": {
+  "officialNames": [
+   {
+    "name": "Mirbəşir",
+    "lang": "az",
+    "start": "1949-08-05T00:00:00Z",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Tərtər",
+    "lang": "az",
+    "start": "1991-02-07T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2394006": {
+  "officialNames": [
+   {
+    "name": "Cəbrayıl",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q512116": {
+  "officialNames": [
+   {
+    "name": "Masallı",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1960-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q586758": {
+  "officialNames": [
+   {
+    "name": "Новая Акстафа",
+    "lang": "ru",
+    "start": "1939-01-01T00:00:00Z",
+    "end": "1959-01-01T00:00:00Z"
+   },
+   {
+    "name": "Казах",
+    "lang": "ru",
+    "end": "1939-01-01T00:00:00Z"
+   },
+   {
+    "name": "Казах",
+    "lang": "ru",
+    "start": "1959-01-01T00:00:00Z",
+    "end": "1991-01-01T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1909-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1026084": {
+  "officialNames": [
+   {
+    "name": "Tovuz",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1026631": {
+  "officialNames": [
+   {
+    "name": "Yelenendorf",
+    "lang": "az",
+    "start": "1812-01-01T00:00:00Z",
+    "end": "1938-01-01T00:00:00Z"
+   },
+   {
+    "name": "Еленендорф",
+    "lang": "ru",
+    "end": "1938-01-01T00:00:00Z"
+   },
+   {
+    "name": "Ханлар",
+    "lang": "ru",
+    "start": "1938-01-01T00:00:00Z",
+    "end": "2008-04-25T00:00:00Z"
+   },
+   {
+    "name": "Гёйгёль",
+    "lang": "ru",
+    "start": "2008-04-26T00:00:00Z"
+   },
+   {
+    "name": "Xanlar",
+    "lang": "az",
+    "start": "1938-01-01T00:00:00Z",
+    "end": "2008-04-25T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1819-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1996181": {
+  "officialNames": [
+   {
+    "name": "Qarabulaq",
+    "lang": "az",
+    "end": "1827-01-01T00:00:00Z"
+   },
+   {
+    "name": "Sərdar",
+    "lang": "az",
+    "start": "1929-03-01T00:00:00Z",
+    "end": "1931-01-01T00:00:00Z"
+   },
+   {
+    "name": "Qaryagin",
+    "lang": "az",
+    "start": "1931-01-01T00:00:00Z",
+    "end": "1959-04-02T00:00:00Z"
+   },
+   {
+    "name": "Füzuli",
+    "lang": "az",
+    "start": "1959-04-02T00:00:00Z"
+   },
+   {
+    "name": "Карабулаг",
+    "lang": "ru",
+    "end": "1827-01-01T00:00:00Z"
+   },
+   {
+    "name": "Карягино",
+    "lang": "ru",
+    "start": "1827-01-01T00:00:00Z",
+    "end": "1959-04-02T00:00:00Z"
+   },
+   {
+    "name": "Qaryagin",
+    "lang": "az",
+    "start": "1827-01-01T00:00:00Z",
+    "end": "1929-03-01T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1827-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": [
+   {
+    "qid": "Q178379",
+    "az": "Füzuli",
+    "en": "Fuzuli"
+   }
+  ]
+ },
+ "Q2090598": {
+  "officialNames": [
+   {
+    "name": "Lerik",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2191437": {
+  "officialNames": [
+   {
+    "name": "Аджигабул",
+    "lang": "ru",
+    "end": "1939-01-24T00:00:00Z"
+   },
+   {
+    "name": "Hacıqabul",
+    "lang": "az",
+    "start": "2000-07-05T00:00:00Z"
+   },
+   {
+    "name": "Hacıqabul",
+    "lang": "az",
+    "end": "1939-01-24T00:00:00Z"
+   },
+   {
+    "name": "Аджигабул",
+    "lang": "ru",
+    "start": "2000-07-05T00:00:00Z"
+   },
+   {
+    "name": "Qazıməmməd",
+    "lang": "az",
+    "start": "1939-01-24T00:00:00Z",
+    "end": "2000-07-05T00:00:00Z"
+   },
+   {
+    "name": "Кази-Магомед",
+    "lang": "ru",
+    "start": "1939-01-24T00:00:00Z",
+    "end": "2000-07-05T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1996815": {
+  "officialNames": [
+   {
+    "name": "İmişli",
+    "lang": "az"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1930-08-08T00:00:00Z",
+    "precision": 11
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q2043938": {
+  "officialNames": [
+   {
+    "name": "Biləsuvar",
+    "lang": "az",
+    "start": "1991-01-01T00:00:00Z"
+   },
+   {
+    "name": "Puşkin",
+    "lang": "az",
+    "start": "1930-01-01T00:00:00Z",
+    "end": "1991-01-01T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2148072": {
+  "officialNames": [
+   {
+    "name": "İsmayıllı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2352148": {
+  "officialNames": [
+   {
+    "name": "Касум-Исмаилово",
+    "lang": "ru",
+    "start": "1938-09-08T00:00:00Z",
+    "end": "1958-06-19T00:00:00Z"
+   },
+   {
+    "name": "Касум-Исмаилов",
+    "lang": "ru",
+    "start": "1958-06-19T00:00:00Z",
+    "end": "1991-02-12T00:00:00Z"
+   },
+   {
+    "name": "Goranboy",
+    "lang": "az",
+    "start": "1991-02-12T00:00:00Z"
+   },
+   {
+    "name": "Герань",
+    "lang": "ru",
+    "end": "1938-09-08T00:00:00Z"
+   },
+   {
+    "name": "Qasım İsmayılov",
+    "lang": "az",
+    "start": "1938-09-08T00:00:00Z",
+    "end": "1991-02-12T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2352160": {
+  "officialNames": [
+   {
+    "name": "Gədəbəy",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1017678": {
+  "officialNames": [
+   {
+    "name": "Salyan",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1851063": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1017683": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1993517": {
+  "officialNames": [
+   {
+    "name": "Saatlı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1026057": {
+  "officialNames": [
+   {
+    "name": "Yardımlı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2043944": {
+  "officialNames": [
+   {
+    "name": "Babək",
+    "lang": "az"
+   },
+   {
+    "name": "Təzəkənd",
+    "lang": "az",
+    "end": "1978-01-01T00:00:00Z"
+   },
+   {
+    "name": "Թազաքենդ",
+    "lang": "hy",
+    "end": "1978-01-01T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2087800": {
+  "officialNames": [
+   {
+    "name": "Trest qəsəbə",
+    "lang": "az",
+    "end": "1952-10-07T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1959-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1017630": {
+  "officialNames": [
+   {
+    "name": "Варташен",
+    "lang": "ru",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Oğuz",
+    "lang": "az",
+    "start": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Vartaşen",
+    "lang": "az",
+    "end": "1991-02-07T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q162411": {
+  "officialNames": [
+   {
+    "name": "İliç",
+    "lang": "az",
+    "start": "1964-01-01T00:00:00Z",
+    "end": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Ильичевск",
+    "lang": "ru",
+    "start": "1964-01-01T00:00:00Z",
+    "end": "1991-01-01T00:00:00Z"
+   },
+   {
+    "name": "Şərur",
+    "lang": "az",
+    "start": "1991-02-07T00:00:00Z"
+   },
+   {
+    "name": "Noraşen",
+    "lang": "az",
+    "start": "1930-08-08T00:00:00Z",
+    "end": "1964-01-01T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2159352": {
+  "officialNames": [
+   {
+    "name": "Şahbuz",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q387971": {
+  "officialNames": [
+   {
+    "name": "Şabran",
+    "lang": "az",
+    "start": "2010-04-02T00:00:00Z"
+   },
+   {
+    "name": "Dəvəçi",
+    "lang": "az",
+    "start": "1944-08-02T00:00:00Z",
+    "end": "2010-04-02T00:00:00Z"
+   },
+   {
+    "name": "Dəvəçibazar",
+    "lang": "az",
+    "end": "1944-08-02T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q646809": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q764030": {
+  "officialNames": [
+   {
+    "name": "Qobustan",
+    "lang": "az"
+   },
+   {
+    "name": "Мараза",
+    "lang": "ru",
+    "end": "2008-04-25T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q747796": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2996307": {
+  "officialNames": [
+   {
+    "name": "Xudat",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q6093319": {
+  "officialNames": [
+   {
+    "name": "Xızı",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2671684": {
+  "officialNames": [
+   {
+    "name": "Port-İliç",
+    "lang": "az",
+    "start": "1924-01-01T00:00:00Z",
+    "end": "1999-10-05T00:00:00Z"
+   },
+   {
+    "name": "Порт-Ильич",
+    "lang": "ru",
+    "start": "1924-01-01T00:00:00Z",
+    "end": "1999-10-05T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1921-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q2656617": {
+  "officialNames": [
+   {
+    "name": "Göytəpə",
+    "lang": "az",
+    "start": "1992-04-29T00:00:00Z"
+   },
+   {
+    "name": "Пришиб",
+    "lang": "ru",
+    "end": "1992-04-29T00:00:00Z"
+   },
+   {
+    "name": "Prişib",
+    "lang": "az",
+    "end": "1992-04-29T00:00:00Z"
+   }
+  ],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1840-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q1272817": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2583107": {
+  "officialNames": [
+   {
+    "name": "Səfərəliyev",
+    "lang": "az",
+    "end": "1992-12-29T00:00:00Z"
+   },
+   {
+    "name": "Nəbiağalı",
+    "lang": "az",
+    "start": "1992-12-29T00:00:00Z",
+    "end": "2008-06-13T00:00:00Z"
+   },
+   {
+    "name": "Samux",
+    "lang": "az",
+    "start": "2008-06-13T00:00:00Z"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1849093": {
+  "officialNames": [
+   {
+    "name": "Qıvraq",
+    "lang": "az"
+   }
+  ],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4140877": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q5749711": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q156557": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q179751": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2015695": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q737363": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1076875": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2352098": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q737240": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q154226": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2496969": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2607299": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2509118": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q3491100": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q5484": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": [
+   {
+    "qid": "Q243312",
+    "az": "Kassilər",
+    "en": "Kassites"
+   }
+  ]
+ },
+ "Q2471263": {
+  "officialNames": [],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1139-10-07T00:00:00Z",
+    "precision": 11
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q2752255": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1438571": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4057542": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q3214846": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1859076": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1768177": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q125995495": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q725591": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2360985": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1728783": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q260554": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q12841468": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2503596": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q6921599": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4074121": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4466667": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q3492465": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q1133443": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q965862": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q920874": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q2657171": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q720134": {
+  "officialNames": [],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "1751-01-01T00:00:00Z",
+    "precision": 9
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q4313909": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4628165": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q25536560": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q47455582": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q8053356": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q4526087": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q55705120": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ },
+ "Q638064": {
+  "officialNames": [],
+  "times": [
+   {
+    "prop": "P571",
+    "time": "0400-01-01T00:00:00Z",
+    "precision": 7
+   }
+  ],
+  "namedAfter": []
+ },
+ "Q625879": {
+  "officialNames": [],
+  "times": [],
+  "namedAfter": []
+ }
+}

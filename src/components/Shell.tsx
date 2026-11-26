@@ -7,7 +7,7 @@ import { useTheme } from '../lib/theme'
 import type { Lang } from '../lib/data'
 import { PinMark } from './PinMark'
 
-const PAGES = ['home', 'atlas', 'ai', 'stats', 'about'] as const
+const PAGES = ['home', 'atlas', 'archive', 'ai', 'stats', 'about'] as const
 
 export function SampleBadge({ compact = false }: { compact?: boolean }) {
   const { t } = useI18n()
@@ -127,7 +127,7 @@ export function Shell({ route, children, fullBleed }: { route: Route; children: 
 
           <nav aria-label="Primary" className="ml-auto hidden items-center gap-1 lg:flex">
             {PAGES.map((p) => {
-              const active = route.page === p
+              const active = route.page === p || (p === 'archive' && route.page === 'method')
               return (
                 <a
                   key={p}
@@ -151,9 +151,11 @@ export function Shell({ route, children, fullBleed }: { route: Route; children: 
           </nav>
 
           <div className="ml-auto flex items-center gap-2 lg:ml-3">
-            <span className="hidden xl:inline-flex">
-              <SampleBadge />
-            </span>
+            {route.page === 'ai' && (
+              <span className="hidden xl:inline-flex">
+                <SampleBadge />
+              </span>
+            )}
             <span className="hidden sm:block">
               <LangSwitch />
             </span>
@@ -201,7 +203,7 @@ export function Shell({ route, children, fullBleed }: { route: Route; children: 
                 ))}
                 <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
                   <LangSwitch />
-                  <SampleBadge />
+                  {route.page === 'ai' && <SampleBadge />}
                 </div>
               </div>
             </m.nav>

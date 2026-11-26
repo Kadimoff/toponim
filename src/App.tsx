@@ -6,6 +6,8 @@ import { useRoute } from './lib/router'
 
 const Atlas = lazy(() => import('./pages/Atlas'))
 const AiDemo = lazy(() => import('./pages/AiDemo'))
+const Archive = lazy(() => import('./pages/Archive'))
+const Method = lazy(() => import('./pages/Method'))
 const Stats = lazy(() => import('./pages/Stats'))
 const About = lazy(() => import('./pages/About'))
 
@@ -24,7 +26,7 @@ export default function App() {
 
   useEffect(() => {
     if (route.page !== 'atlas') window.scrollTo({ top: 0 })
-  }, [route.page])
+  }, [route.page, route.page === 'archive' ? route.id : undefined])
 
   return (
     <LazyMotion features={() => import('./motion-features').then((r) => r.default)} strict>
@@ -33,6 +35,8 @@ export default function App() {
         <Suspense fallback={<PageSkeleton />}>
           {route.page === 'home' && <Home />}
           {route.page === 'atlas' && <Atlas id={route.id} />}
+          {route.page === 'archive' && <Archive key={route.id ?? 'list'} id={route.id} query={route.query} />}
+          {route.page === 'method' && <Method />}
           {route.page === 'ai' && <AiDemo />}
           {route.page === 'stats' && <Stats />}
           {route.page === 'about' && <About />}

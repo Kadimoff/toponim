@@ -425,3 +425,52 @@ h3 {
     linear-gradient(180deg, var(--page) 0%, color-mix(in srgb, var(--page) 70%, transparent) 22%, transparent 42%),
     linear-gradient(0deg, var(--page) 0, transparent 56px);
 }
+
+/* ---------- archive: clusters, compact pins, legend ---------- */
+.pin-sm,
+.pin-sm svg {
+  width: 20px;
+  height: 20px;
+}
+.pin-cluster {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #ddd6fe;
+  background: radial-gradient(circle at 35% 30%, #8b5cf6, #5b21b6);
+  color: #fff;
+  font: 600 0.8125rem/1 var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 0 0 5px rgba(139, 92, 246, 0.28), 0 4px 10px rgba(20, 4, 48, 0.45);
+  cursor: pointer;
+  transition: transform 150ms var(--ease-out);
+}
+.pin-cluster[data-size='m'] {
+  width: 40px;
+  height: 40px;
+}
+.pin-cluster[data-size='l'] {
+  width: 46px;
+  height: 46px;
+  font-size: 0.875rem;
+}
+.pin-cluster:hover {
+  transform: scale(1.08);
+}
+.pin-cluster:focus-visible,
+.pin:focus-visible {
+  outline: 3px solid #f2b84b;
+  outline-offset: 2px;
+}
+.legend-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex: none;
+}
+.prose-quote {
+  white-space: pre-line;
+}

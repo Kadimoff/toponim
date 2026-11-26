@@ -21,7 +21,7 @@ function toggle<T>(set: Set<T>, v: T): Set<T> {
   return n
 }
 
-function ChipGroup<T extends string>({
+export function ChipGroup<T extends string>({
   label,
   values,
   selected,

@@ -3,8 +3,8 @@ import { href, type Route } from '../lib/router'
 import { PinMark } from './PinMark'
 
 export function Footer() {
-  const { t } = useI18n()
-  const pages = ['atlas', 'ai', 'stats', 'about'] as const
+  const { t, lang } = useI18n()
+  const pages = ['atlas', 'archive', 'ai', 'stats', 'about'] as const
   return (
     <footer className="border-t" style={{ borderColor: 'var(--line)' }}>
       <div className="mx-auto flex max-w-[1320px] flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
@@ -20,6 +20,9 @@ export function Footer() {
               {t.nav[p]}
             </a>
           ))}
+          <a href="#/metod" className="text-[0.9375rem] no-underline hover:underline" style={{ color: 'var(--ink-soft)' }}>
+            {t.nav.archive} · {{ az: 'metodologiya', ru: 'методология', en: 'methodology' }[lang]}
+          </a>
         </nav>
         <p className="m-0 text-[0.8125rem]" style={{ color: 'var(--ink-faint)' }}>
           {t.footer}

@@ -36,7 +36,7 @@ Joint project: Baku Slavic University (language and content) and ADNSU (technolo
 
 ## Evidence on Hand
 
-No real data yet. All 30 toponyms, historical forms, years and archive codes are fictional sample data (`src/data/toponyms.json`) and must be labelled "Nümunə məlumat". Never invent real historical claims, etymologies or archival citations. Partner names are text placeholders (no logos supplied).
+Two datasets. (1) The open archive (`src/data/archive/`, built by `scripts/archive/` from a committed cache): 124 real Azerbaijani place names from Wikidata, Wikipedia (AZ/RU/EN, revision-pinned links) and Wikimedia Commons; every statement carries its source, missing facts stay empty, status is "sourced" or "needs expert review", and nothing is expert-verified yet. (2) The 30-item demo (`src/data/toponyms.json`): fictional names, forms, years and archive codes, shown only in the AI demo and the atlas "Demo sample" mode, always labelled "Nümunə məlumat". Never invent real historical claims, etymologies or archival citations. Partner names are text placeholders (no logos supplied).
 
 ## Product Principles
 

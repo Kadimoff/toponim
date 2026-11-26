@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build && node scripts/prerender.mjs",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "data:fetch": "node scripts/archive/fetch.mjs",
+    "data:build": "node scripts/archive/build.mjs"
   },
   "dependencies": {
     "@fontsource-variable/literata": "^5.3.0",

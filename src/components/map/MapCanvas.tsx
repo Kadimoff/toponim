@@ -1,18 +1,26 @@
-import { Component, useEffect, useRef, useState, type ReactNode } from 'react'
+import { Component, useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import * as maplibregl from 'maplibre-gl'
 // MapLibre 6 resolves its worker relative to its own chunk; the bundler does not emit it, so hand it the URL.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import type { Map as MLMap, Marker, StyleSpecification } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-import type { Lang, Toponym } from '../../lib/data'
+import type { Lang } from '../../lib/data'
 import { useThemeValue } from '../../lib/theme'
 import { AZ_BOUNDS, loadBaseStyle, tintStyle } from './mapStyle'
 import { SchematicMap } from './SchematicMap'
 
 maplibregl.setWorkerUrl(workerUrl)
 
+/** Anything with a name, a point and a review state can be a pin (demo toponyms and archive records). */
+export interface MapPoint {
+  id: string
+  names: Record<Lang, string>
+  coordinates: [number, number]
+  status: 'verified' | 'pending'
+}
+
 export interface MapCanvasProps {
-  toponyms: Toponym[]
+  toponyms: MapPoint[]
   visibleIds?: Set<string>
   selectedId?: string
   onSelect?: (id: string) => void
@@ -27,6 +35,9 @@ export interface MapCanvasProps {
   /** fly the camera to the selected pin (off for the landing preview) */
   followSelection?: boolean
   onReady?: () => void
+  /** group pins that overlap on screen (below zoom 9.5) into numbered cluster buttons */
+  cluster?: boolean
+  clusterLabel?: (n: number) => string
 }
 
 function pinSvg(state: 'default' | 'selected' | 'pending') {
@@ -83,7 +94,7 @@ export function MapCanvas(props: MapCanvasProps) {
 }
 
 function MapCanvasInner(props: MapCanvasProps) {
-  const { toponyms, visibleIds, selectedId, onSelect, lang, interactive = true, padding, pinLabel, labels, introStagger, followSelection = true, onReady } = props
+  const { toponyms, visibleIds, selectedId, onSelect, lang, interactive = true, padding, pinLabel, labels, introStagger, followSelection = true, onReady, cluster = false, clusterLabel } = props
   const host = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MLMap | null>(null)
   const baseRef = useRef<StyleSpecification | null>(null)
@@ -92,6 +103,63 @@ function MapCanvasInner(props: MapCanvasProps) {
   onSelectRef.current = onSelect
   const theme = useThemeValue()
   const [state, setState] = useState<'loading' | 'ready' | 'fallback'>('loading')
+  const clusterMarkers = useRef(new Map<string, Marker>())
+  const hiddenByCluster = useRef(new Set<string>())
+  const [clusterTick, setClusterTick] = useState(0)
+  const live = useRef({ toponyms, visibleIds, selectedId, padding, clusterLabel })
+  live.current = { toponyms, visibleIds, selectedId, padding, clusterLabel }
+
+  // screen-space greedy clustering; recomputed on zoom end and when the visible set changes (panning keeps distances)
+  const recluster = useCallback(() => {
+    const map = mapRef.current
+    if (!map || !cluster) return
+    const { toponyms: pts0, visibleIds: vis, selectedId: sel, clusterLabel: cl } = live.current
+    const hidden = new Set<string>()
+    const groups: MapPoint[][] = []
+    if (map.getZoom() < 9.5) {
+      const pts = pts0.filter((t) => (!vis || vis.has(t.id)) && t.id !== sel).map((t) => ({ t, p: map.project(t.coordinates) }))
+      const used = new Set<string>()
+      for (const a of pts) {
+        if (used.has(a.t.id)) continue
+        const g = pts.filter((b) => !used.has(b.t.id) && Math.hypot(a.p.x - b.p.x, a.p.y - b.p.y) < 34)
+        g.forEach((b) => used.add(b.t.id))
+        if (g.length > 1) {
+          g.forEach((b) => hidden.add(b.t.id))
+          groups.push(g.map((b) => b.t))
+        }
+      }
+    }
+    hiddenByCluster.current = hidden
+    const want = new Map(groups.map((g) => [g.map((t) => t.id).sort().join('|'), g]))
+    for (const [k, mk] of clusterMarkers.current) {
+      if (!want.has(k)) {
+        mk.remove()
+        clusterMarkers.current.delete(k)
+      }
+    }
+    for (const [k, g] of want) {
+      if (clusterMarkers.current.has(k)) continue
+      const lng = g.reduce((a, t) => a + t.coordinates[0], 0) / g.length
+      const lat = g.reduce((a, t) => a + t.coordinates[1], 0) / g.length
+      const el = document.createElement('button')
+      el.type = 'button'
+      el.className = 'pin-cluster'
+      el.dataset.size = g.length > 9 ? 'l' : g.length > 4 ? 'm' : 's'
+      el.textContent = String(g.length)
+      const label = cl ? cl(g.length) : String(g.length)
+      el.setAttribute('aria-label', label + ': ' + g.map((t) => t.names[lang]).slice(0, 6).join(', '))
+      el.title = g.map((t) => t.names[lang]).slice(0, 8).join(', ') + (g.length > 8 ? '…' : '')
+      el.addEventListener('click', (ev) => {
+        ev.stopPropagation()
+        const b = new maplibregl.LngLatBounds()
+        g.forEach((t) => b.extend(t.coordinates))
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        map.fitBounds(b, { padding: live.current.padding ?? 48, maxZoom: Math.max(map.getZoom() + 1.5, 9.6), duration: reduce ? 0 : 700 })
+      })
+      clusterMarkers.current.set(k, new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat([lng, lat]).addTo(map))
+    }
+    setClusterTick((x) => x + 1)
+  }, [cluster, lang])
 
   // --- create map once
   useEffect(() => {
@@ -176,6 +244,8 @@ function MapCanvasInner(props: MapCanvasProps) {
       window.clearTimeout(timeout)
       markers.current.forEach(({ marker }) => marker.remove())
       markers.current.clear()
+      clusterMarkers.current.forEach((mk) => mk.remove())
+      clusterMarkers.current.clear()
       map?.remove()
       mapRef.current = null
     }
@@ -202,6 +272,13 @@ function MapCanvasInner(props: MapCanvasProps) {
     const map = mapRef.current
     if (!map || state !== 'ready') return
     const existing = markers.current
+    const ids = new Set(toponyms.map((t) => t.id))
+    for (const [id, { marker }] of existing) {
+      if (!ids.has(id)) {
+        marker.remove()
+        existing.delete(id)
+      }
+    }
     toponyms.forEach((t, i) => {
       if (existing.has(t.id)) return
       const el = document.createElement('button')
@@ -228,12 +305,23 @@ function MapCanvasInner(props: MapCanvasProps) {
     })
   }, [toponyms, state, interactive, introStagger])
 
+  // --- clustering triggers
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || state !== 'ready' || !cluster) return
+    recluster()
+    map.on('zoomend', recluster)
+    return () => {
+      map.off('zoomend', recluster)
+    }
+  }, [state, cluster, recluster, toponyms, visibleIds, selectedId])
+
   // --- marker state: visibility, selection, labels
   useEffect(() => {
     markers.current.forEach(({ el }, id) => {
       const t = toponyms.find((x) => x.id === id)
       if (!t) return
-      const visible = !visibleIds || visibleIds.has(id)
+      const visible = (!visibleIds || visibleIds.has(id)) && !hiddenByCluster.current.has(id)
       const selected = id === selectedId
       el.style.display = visible ? '' : 'none'
       el.dataset.selected = String(selected)
@@ -242,7 +330,7 @@ function MapCanvasInner(props: MapCanvasProps) {
       el.setAttribute('aria-pressed', String(selected))
       el.title = t.names[lang]
     })
-  }, [toponyms, visibleIds, selectedId, lang, pinLabel, state])
+  }, [toponyms, visibleIds, selectedId, lang, pinLabel, state, clusterTick])
 
   // --- fly to selection
   useEffect(() => {

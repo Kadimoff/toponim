@@ -1,4 +1,5 @@
-import type { Lang, Toponym } from '../../lib/data'
+import type { Lang } from '../../lib/data'
+import type { MapPoint } from './MapCanvas'
 import { AZ_BOUNDS } from './mapStyle'
 
 /** Offline fallback: an equirectangular schematic with a coordinate graticule. No country outline — we never draw a border we cannot source. */
@@ -13,7 +14,7 @@ export function SchematicMap({
   note,
   introStagger,
 }: {
-  toponyms: Toponym[]
+  toponyms: MapPoint[]
   visibleIds?: Set<string>
   selectedId?: string
   onSelect?: (id: string) => void
@@ -62,12 +63,13 @@ export function SchematicMap({
             <button
               key={t.id}
               type="button"
-              className="pin absolute -translate-x-1/2 -translate-y-1/2"
+              className={`pin absolute -translate-x-1/2 -translate-y-1/2 ${toponyms.length > 40 ? 'pin-sm' : ''}`}
               data-selected={sel}
               style={{
                 left: `${x * 100}%`,
                 top: `${y * 100}%`,
                 animation: introStagger ? `pinIn 320ms cubic-bezier(.22,1,.36,1) ${250 + i * 70}ms both` : undefined,
+                zIndex: sel ? 3 : undefined,
               }}
               tabIndex={interactive ? 0 : -1}
               aria-label={pinLabel(t.names[lang])}
